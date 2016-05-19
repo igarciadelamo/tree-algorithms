@@ -5,10 +5,6 @@ import org.javajavadoo.samples.model.NodeList;
 import org.javajavadoo.samples.model.Tree;
 import org.junit.Assert;
 
-import java.util.List;
-
-import static org.junit.Assert.*;
-
 public class BreadthFirstSearchTest {
 
     /**

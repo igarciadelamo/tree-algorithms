@@ -1,12 +1,13 @@
 package org.javajavadoo.samples.model;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 public class Node {
 
-    private String value;
-    private List<Node> children;
+    private final String value;
+    private final List<Node> children;
     private boolean visited;
 
     public Node(String value) {
@@ -15,17 +16,9 @@ public class Node {
         this.visited = false;
     }
 
-
-    public void addChild(Node child) {
-        children.add(child);
-    }
-
     public void addChildren(Node... nodes) {
-        for(Node child: nodes) {
-            children.add(child);
-        }
+        children.addAll(Arrays.asList(nodes));
     }
-
 
     public List<Node> getChildren() {
         return children;

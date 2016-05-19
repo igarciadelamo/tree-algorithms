@@ -7,7 +7,7 @@ import org.javajavadoo.samples.model.Tree;
 import java.util.LinkedList;
 import java.util.Queue;
 
-public class BreadthFirstSearch {
+class BreadthFirstSearch {
 
 
     public NodeList execute(Tree tree) {
