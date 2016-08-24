@@ -5,7 +5,7 @@ import org.javajavadoo.samples.model.NodeList;
 import org.javajavadoo.samples.model.Tree;
 import org.junit.Assert;
 
-public class BreadthFirstSearchTest {
+public class DepthFirstSearchTest {
 
     /**
      * Test for the tree:
@@ -21,8 +21,8 @@ public class BreadthFirstSearchTest {
         Tree tree = new Tree();
         tree.setRoot(node01);
 
-        BreadthFirstSearch bfs = new BreadthFirstSearch();
-        NodeList result = bfs.execute(tree);
+        DepthFirstSearch nfs = new DepthFirstSearch();
+        NodeList result = nfs.execute(tree);
         Assert.assertEquals(result.getOrderChain(), "A");
     }
 
@@ -34,7 +34,7 @@ public class BreadthFirstSearchTest {
      *     ||| |
      *     DEF G
      *
-     * The result is A-B-C-D-E-F-G
+     * The result is A-B-D-E-F-C-G
      *
      */
     @org.junit.Test
@@ -55,8 +55,8 @@ public class BreadthFirstSearchTest {
         Tree tree = new Tree();
         tree.setRoot(node01);
 
-        BreadthFirstSearch bfs = new BreadthFirstSearch();
-        NodeList result = bfs.execute(tree);
-        Assert.assertEquals("A-B-C-D-E-F-G", result.getOrderChain());
+        DepthFirstSearch nfs = new DepthFirstSearch();
+        NodeList result = nfs.execute(tree);
+        Assert.assertEquals("A-B-D-E-F-C-G", result.getOrderChain());
     }
 }
