@@ -57,6 +57,6 @@ public class BreadthFirstSearchTest {
 
         BreadthFirstSearch bfs = new BreadthFirstSearch();
         NodeList result = bfs.execute(tree);
-        Assert.assertEquals(result.getOrderChain(), "A-B-C-D-E-F-G");
+        Assert.assertEquals("A-B-C-D-E-F-G", result.getOrderChain());
     }
 }
