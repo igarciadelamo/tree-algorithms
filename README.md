@@ -6,5 +6,5 @@
 # tree-algorithms
 Algorithms for trees in java
 
-Implemented the Breath First Search Algorithm for trees using Java8.
+Implemented the Breath First Search and Depth First Search Algorithms for trees using Java8.
 
